@@ -11,6 +11,7 @@ module OpenSource
     File.basename(filename, '.erb') if !['.', '..'].include?(filename)
   end.compact
 
+  # Load the credentials file
   CONFIG_PATH = File.expand_path('~/.osrc')
 
   def self.request_owner_credentials
